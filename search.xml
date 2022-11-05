@@ -34,7 +34,7 @@
       <link href="/2022/11/05/test/"/>
       <url>/2022/11/05/test/</url>
       
-        <content type="html"><![CDATA[<!-- <meta name="referrer" content="no-referrer"/> --><p>测试</br><br>使用markdown<br><img src="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105154045920-856617644.png" alt="img"></p><p>使用html<br><img src="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png"/></p><p>使用url<br><a href="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png">https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png</a></p><p>使用url引用<br><a href="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png">测试</a></p>]]></content>
+        <content type="html"><![CDATA[<p>测试</br><br>使用markdown<br><img src="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105154045920-856617644.png" alt="img"></p><p>使用html<br><img src="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png"/></p><p>使用url<br><a href="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png">https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png</a></p><p>使用url引用<br><a href="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png">测试</a></p>]]></content>
       
       
       
