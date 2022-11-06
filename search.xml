@@ -156,27 +156,6 @@
     
     
     <entry>
-      <title>日志</title>
-      <link href="/2022/11/06/log/"/>
-      <url>/2022/11/06/log/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-2199a29dfca7a04270fafb715f221ac2_720w.webp"></p><h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a><div id="log">日志</div></h1><p>说明:本页面是tupi的工作日志</p><h2 id="2022年11月6日"><a href="#2022年11月6日" class="headerlink" title="2022年11月6日"></a><div id="11-06">2022年11月6日</div></h2><p>P:完善blog<br>2022年11月6日09:29:30<br>D:blog更改为tag标签.<br>D:改回分类</p><p>T:更改图床<br>2022年11月6日09:29:53<br>D:使用PigGo<br>Q:unable to verify the first certificate<br>A:取消验证:npm config set strict-ssl false<br>A：升级npm install npm -g –ca&#x3D;null<br>N</p><p>2022年11月6日10:32:47<br>Q:Error: unable to verify the first certificate\n at TLSSocket.onConnectSecure (node:_tls_wrap:1530:34)\n at TLSSocket.emit (node:events:394:28)\n at TLSSocket._finishInit (node:_tls_wrap:944:8)\n at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:725:12)<br>A:改用gitee，注意clone仓库</p><p>T:关于页的完善<br>T:建立站页<br>2022年11月6日10:42:18<br>T:字体更改<br>D:ok</p><p>2022年11月6日10:32:55<br>Q：blog日夜反了<br>A:OK</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 记录 </category>
-          
-          <category> 工作 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>算法的学习</title>
       <link href="/2022/11/06/method/"/>
       <url>/2022/11/06/method/</url>
@@ -189,6 +168,27 @@
           <category> 学习 </category>
           
           <category> 算法 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>日志</title>
+      <link href="/2022/11/06/log/"/>
+      <url>/2022/11/06/log/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-2199a29dfca7a04270fafb715f221ac2_720w.webp"></p><h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a><div id="log">日志</div></h1><p>说明:本页面是tupi的工作日志</p><h2 id="2022年11月6日"><a href="#2022年11月6日" class="headerlink" title="2022年11月6日"></a><div id="11-06">2022年11月6日</div></h2><p>P:完善blog<br>2022年11月6日09:29:30<br>D:blog更改为tag标签.<br>D:改回分类</p><p>T:更改图床<br>2022年11月6日09:29:53<br>D:使用PigGo<br>Q:unable to verify the first certificate<br>A:取消验证:npm config set strict-ssl false<br>A：升级npm install npm -g –ca&#x3D;null<br>N</p><p>2022年11月6日10:32:47<br>Q:Error: unable to verify the first certificate\n at TLSSocket.onConnectSecure (node:_tls_wrap:1530:34)\n at TLSSocket.emit (node:events:394:28)\n at TLSSocket._finishInit (node:_tls_wrap:944:8)\n at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:725:12)<br>A:改用gitee，注意clone仓库</p><p>T:关于页的完善<br>T:建立站页<br>2022年11月6日10:42:18<br>T:字体更改<br>D:ok</p><p>2022年11月6日10:32:55<br>Q：blog日夜反了<br>A:OK</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 记录 </category>
+          
+          <category> 工作 </category>
           
       </categories>
       
