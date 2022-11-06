@@ -4,12 +4,22 @@
   
     
     <entry>
-      <title></title>
+      <title>Briefy日志</title>
       <link href="/2022/11/06/briefy/"/>
       <url>/2022/11/06/briefy/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Briefy"><a href="#Briefy" class="headerlink" title="Briefy"></a><div id="Briefy">Briefy</div></h1><h2 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h2><p>两个界面:</p><ol><li>记录界面，尽可能简洁</li><li>总界面，用来查看流水.<br>可能会实现的功能:</li></ol><ul><li>记录同步和读取<ul><li>移动端的接收</li></ul></li><li>记录界面可置顶</li><li>每月页面是5*7日历<ul><li>点击日期，进行跳转</li></ul></li><li>每周页面实现甘特图</li><li>主界面图标隐藏到状态栏</li><li>移动端</li><li>使用快捷键.<ul><li>Q:前缀就是问题类型question 自动将整段生成3级标题 时间 </li><li>A：就是解答类型question 指定Q自动生成<code>####</code>，时间</li><li>T：TODO 2级标题 时间</li><li>D:TODO的完成 指定Q 3级标题 时间</li><li>P:总的方案，无回复plan 2级标题 时间</li><li>W：做的工作，无回复work 2级标题 时间</li><li>其他字符:如<code>c# java html c</code> 只能小写 标记为代码，后台自动加上代码标记 指定标题</li><li>后缀系统:Y完成，N方案不满意 自动在结束时加<code>-</code>和评定()<ul><li>追回方式，在判定指定时评分(未完成&#x2F;任务完成).</li><li>Y会是更改2级标题颜色为蓝色，没有Y会是一直红色</li><li>后期判定</li><li>将A标签名改为解决&#x2F;未解决</li></ul></li></ul></li><li>取消xml作为本地文件.<ul><li>使用txt+md</li><li>txt编写QATD…在界面显示，注意排版<ul><li>在结束前添加时间戳</li><li>自动在每段添加<code>----------------</code>方便观看<ul><li><p>例子:<br>  <img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/2022-11-06_18-14-02.jpg" alt="生成的txt显示文件，界面直接读取的是此文件"></p><p>  <img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/2022-11-06_18-30-17.jpg" alt="生成的md隐藏文件。"><br>  <img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/2022-11-06_18-30-28.jpg" alt="和txt文件同一个文件夹，只是后缀不同."></p></li></ul></li></ul></li><li>md转换标题什么的</li><li>一天作为一个文件</li><li>每周一个二级文件夹</li><li>每月一个一级文件夹</li><li>时间戳作为单位</li></ul></li></ul><p><img src="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105152807570-896647403.png" alt="基本功能"></p><h2 id="项目进度"><a href="#项目进度" class="headerlink" title="项目进度"></a>项目进度</h2><h2 id="项目困难"><a href="#项目困难" class="headerlink" title="项目困难"></a>项目困难</h2><h2 id="项目心得"><a href="#项目心得" class="headerlink" title="项目心得"></a>项目心得</h2>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Briefy"><a href="#Briefy" class="headerlink" title="Briefy"></a>Briefy</h1><h2 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h2><p>两个界面:</p><ol><li>记录界面，尽可能简洁</li><li>总界面，用来查看流水.<br>可能会实现的功能:</li></ol><ul><li>记录同步和读取<ul><li>移动端的接收</li></ul></li><li>记录界面可置顶</li><li>每月页面是5*7日历<ul><li>点击日期，进行跳转</li></ul></li><li>每周页面实现甘特图</li><li>主界面图标隐藏到状态栏</li><li>移动端</li><li>使用快捷键.<ul><li>Q:前缀就是问题类型question 自动将整段生成3级标题 时间 </li><li>A：就是解答类型question 指定Q自动生成<code>####</code>，时间</li><li>T：TODO 2级标题 时间</li><li>D:TODO的完成 指定Q 3级标题 时间</li><li>P:总的方案，无回复plan 2级标题 时间</li><li>W：做的工作，无回复work 2级标题 时间</li><li>其他字符:如<code>c# java html c</code> 只能小写 标记为代码，后台自动加上代码标记 指定标题</li><li>后缀系统:Y完成，N方案不满意 自动在结束时加<code>-</code>和评定()<ul><li>追回方式，在判定指定时评分(未完成&#x2F;任务完成).</li><li>Y会是更改2级标题颜色为蓝色，没有Y会是一直红色</li><li>后期判定</li><li>将A标签名改为解决&#x2F;未解决</li></ul></li></ul></li><li>取消xml作为本地文件.<ul><li>使用txt+md</li><li>txt编写QATD…在界面显示，注意排版<ul><li>在结束前添加时间戳</li><li>自动在每段添加<code>----------------</code>方便观看<ul><li><p>例子:<br>  <img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/2022-11-06_18-14-02.jpg" alt="生成的txt显示文件，界面直接读取的是此文件"></p><p>  <img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/2022-11-06_18-30-17.jpg" alt="生成的md隐藏文件。"><br>  <img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/2022-11-06_18-30-28.jpg" alt="和txt文件同一个文件夹，只是后缀不同."></p></li></ul></li></ul></li><li>md转换标题什么的</li><li>一天作为一个文件</li><li>每周一个二级文件夹</li><li>每月一个一级文件夹</li><li>时间戳作为单位</li></ul></li></ul><p><img src="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105152807570-896647403.png" alt="基本功能"></p><h2 id="项目进度"><a href="#项目进度" class="headerlink" title="项目进度"></a>项目进度</h2><h2 id="项目困难"><a href="#项目困难" class="headerlink" title="项目困难"></a>项目困难</h2><h2 id="项目心得"><a href="#项目心得" class="headerlink" title="项目心得"></a>项目心得</h2>]]></content>
       
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+          <category> c# </category>
+          
+          <category> WPF </category>
+          
+      </categories>
       
       
     </entry>
@@ -156,6 +166,27 @@
     
     
     <entry>
+      <title>日志</title>
+      <link href="/2022/11/06/log/"/>
+      <url>/2022/11/06/log/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-2199a29dfca7a04270fafb715f221ac2_720w.webp"></p><h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a><div id="log">日志</div></h1><p>说明:本页面是tupi的工作日志</p><h2 id="2022年11月6日"><a href="#2022年11月6日" class="headerlink" title="2022年11月6日"></a><div id="11-06">2022年11月6日</div></h2><p>P:完善blog<br>2022年11月6日09:29:30<br>D:blog更改为tag标签.<br>D:改回分类</p><p>T:更改图床<br>2022年11月6日09:29:53<br>D:使用PigGo<br>Q:unable to verify the first certificate<br>A:取消验证:npm config set strict-ssl false<br>A：升级npm install npm -g –ca&#x3D;null<br>N</p><p>2022年11月6日10:32:47<br>Q:Error: unable to verify the first certificate\n at TLSSocket.onConnectSecure (node:_tls_wrap:1530:34)\n at TLSSocket.emit (node:events:394:28)\n at TLSSocket._finishInit (node:_tls_wrap:944:8)\n at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:725:12)<br>A:改用gitee，注意clone仓库</p><p>T:关于页的完善<br>T:建立站页<br>2022年11月6日10:42:18<br>T:字体更改<br>D:ok</p><p>2022年11月6日10:32:55<br>Q：blog日夜反了<br>A:OK</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+          <category> 记录 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>算法的学习</title>
       <link href="/2022/11/06/method/"/>
       <url>/2022/11/06/method/</url>
@@ -168,27 +199,6 @@
           <category> 学习 </category>
           
           <category> 算法 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>日志</title>
-      <link href="/2022/11/06/log/"/>
-      <url>/2022/11/06/log/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-2199a29dfca7a04270fafb715f221ac2_720w.webp"></p><h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a><div id="log">日志</div></h1><p>说明:本页面是tupi的工作日志</p><h2 id="2022年11月6日"><a href="#2022年11月6日" class="headerlink" title="2022年11月6日"></a><div id="11-06">2022年11月6日</div></h2><p>P:完善blog<br>2022年11月6日09:29:30<br>D:blog更改为tag标签.<br>D:改回分类</p><p>T:更改图床<br>2022年11月6日09:29:53<br>D:使用PigGo<br>Q:unable to verify the first certificate<br>A:取消验证:npm config set strict-ssl false<br>A：升级npm install npm -g –ca&#x3D;null<br>N</p><p>2022年11月6日10:32:47<br>Q:Error: unable to verify the first certificate\n at TLSSocket.onConnectSecure (node:_tls_wrap:1530:34)\n at TLSSocket.emit (node:events:394:28)\n at TLSSocket._finishInit (node:_tls_wrap:944:8)\n at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:725:12)<br>A:改用gitee，注意clone仓库</p><p>T:关于页的完善<br>T:建立站页<br>2022年11月6日10:42:18<br>T:字体更改<br>D:ok</p><p>2022年11月6日10:32:55<br>Q：blog日夜反了<br>A:OK</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 记录 </category>
-          
-          <category> 工作 </category>
           
       </categories>
       
@@ -227,6 +237,8 @@
       <categories>
           
           <category> 学习 </category>
+          
+          <category> c# </category>
           
           <category> WPF </category>
           
