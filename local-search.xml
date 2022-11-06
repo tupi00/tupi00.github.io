@@ -46,27 +46,6 @@
   
   
   <entry>
-    <title>c#学习</title>
-    <link href="/2022/11/06/c#/"/>
-    <url>/2022/11/06/c#/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/8f43d3cb984565983b69724a9a4f1917.jpg"></p><h1 id="c"><a href="#c" class="headerlink" title="c#"></a>c#</h1><hr><p><a href="https://so.gushiwen.cn/shiwenv_870828ca8aaa.aspx"><strong>行路难·其一</strong></a></p><p><a href="https://so.gushiwen.cn/authorv.aspx?name=%E6%9D%8E%E7%99%BD">李白</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%94%90%E4%BB%A3">〔唐代〕</a></p><p>金樽清酒斗十千，玉盘珍羞直万钱。<br>停杯投箸不能食，拔剑四顾心茫然。<br>欲渡黄河冰塞川，将登太行雪满山。<br>闲来垂钓碧溪上，忽复乘舟梦日边。<br>行路难，行路难，多歧路，今安在？<br>长风破浪会有时，直挂云帆济沧海。</p><hr>]]></content>
-    
-    
-    <categories>
-      
-      <category>学习</category>
-      
-      <category>c#</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>java作业</title>
     <link href="/2022/11/06/java/"/>
     <url>/2022/11/06/java/</url>
@@ -123,6 +102,27 @@
       <category>c#</category>
       
       <category>unity</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>c#学习</title>
+    <link href="/2022/11/06/csharp/"/>
+    <url>/2022/11/06/csharp/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/8f43d3cb984565983b69724a9a4f1917.jpg"></p><h1 id="c"><a href="#c" class="headerlink" title="c#"></a>c#</h1><hr><p><a href="https://so.gushiwen.cn/shiwenv_870828ca8aaa.aspx"><strong>行路难·其一</strong></a></p><p><a href="https://so.gushiwen.cn/authorv.aspx?name=%E6%9D%8E%E7%99%BD">李白</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%94%90%E4%BB%A3">〔唐代〕</a></p><p>金樽清酒斗十千，玉盘珍羞直万钱。<br>停杯投箸不能食，拔剑四顾心茫然。<br>欲渡黄河冰塞川，将登太行雪满山。<br>闲来垂钓碧溪上，忽复乘舟梦日边。<br>行路难，行路难，多歧路，今安在？<br>长风破浪会有时，直挂云帆济沧海。</p><hr>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习</category>
+      
+      <category>c#</category>
       
     </categories>
     
