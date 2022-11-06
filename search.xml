@@ -248,19 +248,6 @@
     </entry>
     
     
-    
-    <entry>
-      <title>内部测试页面</title>
-      <link href="/2022/11/05/test/"/>
-      <url>/2022/11/05/test/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-25b8bd3ce8a1db36584f9179e41f1d30_720w%20(1).webp"></p><h1 id="网页测试页"><a href="#网页测试页" class="headerlink" title="网页测试页"></a>网页测试页</h1><p><a href="#time">跳转到时间测试</a></p><hr><p>2022年11月5日19:46:21<br>markdown<br><img src="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105154045920-856617644.png" alt="img"></p><hr><p>腾讯云测试<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/%E6%97%A0%E6%A0%87%E9%A2%98.png"></p><hr><p>锚点测试:</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs applescript">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;Mark&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;这句话定义了锚点所指定的位置标记，名字为“Mark”.<br>[这句话是想要跳转到Mark处的锚点链接，点击即会跳转](<span class="hljs-comment">#Mark).</span><br></code></pre></td></tr></table></figure><p><a href="#Mark">跳转到诗歌</a></p><hr><p>使用html 测试<br><img src="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png"/></p><hr><p>使用url 测试<br><a href="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png">https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png</a></p><hr><p>使用url引用测试<br><a href="https://img2022.cnblogs.com/blog/3026848/202211/3026848-20221105153612985-708421018.png">测试</a></p><hr><div id="time">时间测试</div>2022年11月6日17:39:232022年11月6日17:47:452022年11月6日17:58:232022年11月6日18:00:122022年11月6日18:23:252022年11月6日18:23:282022年11月6日18:23:412022年11月6日18:23:472022年11月6日18:23:492022年11月6日18:23:502022年11月6日19:05:56<hr><div id="Mark">诗歌测试</div><p>短歌行<br>王建 〔唐代〕</p><p>人初生，日初出。<br>上山迟，下山疾。<br>百年三万六千朝，夜里分将强半日。<br>有歌有舞须早为，昨日健于今日时。<br>人家见生男女好，不知男女催人老。<br>短歌行，无乐声</p><hr>]]></content>
-      
-      
-      
-    </entry>
-    
-    
   
   
 </search>
