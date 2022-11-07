@@ -26,7 +26,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-2199a29dfca7a04270fafb715f221ac2_720w.webp">
 <meta property="article:published_time" content="2022-11-06T01:11:39.000Z">
-<meta property="article:modified_time" content="2022-11-06T15:10:04.750Z">
+<meta property="article:modified_time" content="2022-11-07T13:44:24.082Z">
 <meta property="article:author" content="tupi">
 <meta property="article:tag" content="unity">
 <meta name="twitter:card" content="summary_large_image">
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          9.4k 字
+          9.9k 字
         
       </span>
     
@@ -238,7 +238,7 @@
         
         
         
-          79 分钟
+          83 分钟
         
       </span>
     
@@ -537,7 +537,7 @@ hexo d同步到gayhub
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">git remote -v<br>git remote remove orign<br>git remote add origin https://github.com/tupi00/tupi00.github.io.git<br>git push -u origin main<br>git pull --rebase origin master<br></code></pre></td></tr></table></figure>
 <p>A:未解决</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs shell">git config --global user.name tupi00<br>git config --global user.email tupi00@126.com<br>mkdir tupi00<br>cd tupi00<br>git init<br>touch README.md<br>git add README.md<br>git commit -m &quot;first commit&quot;<br>git remote add origin git@github.com:tupi00/tupi00.github.io.git<br>git push  -u origin &quot;masster&quot;<br>报错:<br>error: src refspec masster does not match any error: failed to push some refs to &#x27;git@gitee.com/tupi<br></code></pre></td></tr></table></figure>
-<p>Q:error: src refspec masster does not match any error: failed to push some refs to ‘<a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#101;&#101;&#46;&#99;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#101;&#101;&#46;&#99;&#111;&#x6d;</a>&#x2F;tupi<br>2022年11月6日16:01:45<br>A:未解决</p>
+<p>Q:error: src refspec masster does not match any error: failed to push some refs to ‘<a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#101;&#x65;&#46;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#101;&#x65;&#46;&#x63;&#x6f;&#109;</a>&#x2F;tupi<br>2022年11月6日16:01:45<br>A:未解决</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell">git branch<br>git branch -m master main<br>git push orgin main<br>fatal: &#x27;orgin&#x27; does not appear to be a git repository<br>fatal: Could not read from remote repository.<br><br>Please make sure you have the correct access rights<br>and the repository exists.<br></code></pre></td></tr></table></figure>
 <p>Q:! [rejected] main -&gt; main (fetch first) error: failed to push some refs to ‘<a target="_blank" rel="noopener" href="https://github.com/tupi00/tupi00.github.io.git&#39;">https://github.com/tupi00/tupi00.github.io.git&#39;</a> hint: Updates were rejected because the remote contains work that you do hint: not have locally. This is usually caused by another repository pushing hint: to the same ref. You may want to first integrate the remote changes hint: (e.g., ‘git pull …’) before pushing again. hint: See the ‘Note about fast-forwards’ in ‘git push –help’ for details.<br>A:未解决</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">git add .<br>git commit -m &quot;fix bug&quot;<br>git push<br></code></pre></td></tr></table></figure>
@@ -555,11 +555,21 @@ hexo d同步到gayhub
 2022年11月6日18:10:14</li>
 </ul>
 <hr>
-<p>Q:warning: in the working copy of ‘package-lock.json’, LF will be replaced by CRLF the next time Git touches it<br>2022年11月6日18:53:31<br>A:<br>.gitconfig 文件<br>在 [core] 区段找到 autocrlf，将它的值改为 false。如果没找到，就新增一行：<code>[core]     autocrlf = false </code></p>
-<pre><code class="hljs">W:WPF学习
-2022年11月6日17:01:33
-
-</code></pre>
+<p>Q:warning: in the working copy of ‘package-lock.json’, LF will be replaced by CRLF the next time Git touches it<br>2022年11月6日18:53:31<br>A:<br>.gitconfig 文件<br>在 [core] 区段找到 autocrlf，将它的值改为 false。如果没找到，就新增一行：[core] autocrlf &#x3D; false</p>
+<p>W:WPF学习<br>2022年11月6日17:01:33</p>
+<h2 id="2022年11月7日"><a href="#2022年11月7日" class="headerlink" title="2022年11月7日"></a>2022年11月7日</h2><p>W:数据结构的学习<br>2022年11月7日05:29:48</p>
+<hr>
+<p>W:完成java<br>2022年11月7日10:32:00</p>
+<hr>
+<p>W:数据结构的学习<br>2022年11月7日10:32:00-2022年11月7日10:32:00</p>
+<hr>
+<p>Q:ssh: connect to host github.com port 22: Connection refused fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists. FATAL Something’s wr<br>2022年11月7日12:00:39<br>A:<br>修改端口<br>给.ssh&#x2F;config</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs stylus">Host github<span class="hljs-selector-class">.com</span><br>  Hostname ssh<span class="hljs-selector-class">.github</span><span class="hljs-selector-class">.com</span><br>  Port <span class="hljs-number">443</span><br></code></pre></td></tr></table></figure>
+<p>2022年11月7日12:00:39</p>
+<hr>
+<p>W:数据结构学习<br>2022年11月7日12:00:39-2022年11月7日12:57:47</p>
+<hr>
+<p>W:数据结构学习<br>2022年11月7日19:28:10-2022年11月7日21:39:19</p>
 
                 
               </div>
@@ -663,9 +673,9 @@ hexo d同步到gayhub
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/06/csharp/method/" title="算法的学习">
+                      <a href="/2022/11/06/log/0000_00_00-0000_00_00/" title="0000年00月00日 日志">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">算法的学习</span>
+                        <span class="hidden-mobile">0000年00月00日 日志</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -673,8 +683,8 @@ hexo d同步到gayhub
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/06/log/0000_00_00-0000_00_00/" title="0000年00月00日 日志">
-                        <span class="hidden-mobile">0000年00月00日 日志</span>
+                      <a href="/2022/11/05/other/web/" title="我的建站之旅">
+                        <span class="hidden-mobile">我的建站之旅</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
