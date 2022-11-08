@@ -4,11 +4,30 @@
   
   
   <entry>
+    <title>学习路线</title>
+    <link href="/2022/11/09/csharp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    <url>/2022/11/09/csharp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h1><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-2199a29dfca7a04270fafb715f221ac2_720w.webp"><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/aspnetcore-developer-roadmap.zh-Hans.png"></p><pre><code class=" mermaid">graph TDclassDef default fill: #f9a, stroke: #333, stroke-width: 4px;A(c#学习之路)--&gt;B(c#基础语法)B--&gt;L(基本技能)L--&gt;L0(内容)L0--&gt;L1(git)L--&gt;C(四大件)C--&gt;C0(内容)C0--&gt;C1(数据结构)C0--&gt;C2(操作系统)C0--&gt;C3(计算机组成原理)C0--&gt;C4(计算机网络)C0--&gt;C5(数据库系统)C5--&gt;C51(slqlite)C0--&gt;C*(其他计算机相关知识)C*--&gt;C6(图形学)C*--&gt;C7(离散数学)C--&gt;D(C#进阶学习)D--&gt;D0(内容)D0--&gt;D3(语言的新特性)D0--&gt;D2(JIT即时编译)D0--&gt;D1(.NET 6)D--&gt;E(unity基础学习)E--&gt;E0(内容)E--&gt;M(对象关系映射)M--&gt;I(依赖注入)I--&gt;J(日志系统)J--&gt;K(缓存)K--&gt;N(API客户端和通信)N--&gt;O(实时通信)O--&gt;P(对象映射)P--&gt;Q(任务调度)Q--&gt;R(测试)R--&gt;S(微服务)S--&gt;T(持续集成和部署)T--&gt;U(unity的进阶学习)U--&gt;U0(内容)U0--&gt;U1(UGUI)U0--&gt;U2(NGUI)U0--&gt;U3(VR/AR)U0--&gt;U4(sharder)U0--&gt;U5(blender)U0--&gt;U6(反射c#)U0--&gt;U7(性能优化)U0--&gt;U8(核心原理)U0--&gt;U9(ILRuntime热更新)U--&gt;V(类库的学习)V--&gt;F(WPF)F--&gt;G(Xamain)G--&gt;H(ASP.NET core)H--&gt;H0(内容)H0--&gt;H1(基本用法)H0--&gt;H2(TypeScript)</code></pre><hr><p>侠客行</p><p><a href="https://so.gushiwen.cn/authorv_b90660e3e492.aspx">李白</a>  <a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%94%90%E4%BB%A3">〔唐代〕</a></p><p>赵客缦胡缨，吴钩霜雪明。<br>银鞍照白马，飒沓如流星。<br>十步杀一人，千里不留行。<br>事了拂衣去，深藏身与名。<br>闲过信陵饮，脱剑膝前横。<br>将炙啖朱亥，持觞劝侯嬴。<br>三杯吐然诺，五岳倒为轻。<br>眼花耳热后，意气素霓生。<br>救赵挥金槌，邯郸先震惊。<br>千秋二壮士，烜赫大梁城。<br>纵死侠骨香，不惭世上英。<br>谁能书阁下，白首太玄经</p><hr>]]></content>
+    
+    
+    <categories>
+      
+      <category>c#</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>mermaid学习</title>
     <link href="/2022/11/08/web/mermaid%E8%AF%AD%E6%B3%95/"/>
     <url>/2022/11/08/web/mermaid%E8%AF%AD%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-ea5c51e1937db5b472fd5e2328a5f346_r.jpg"></p><h1 id="mermaid"><a href="#mermaid" class="headerlink" title="mermaid"></a>mermaid</h1><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>mermaid: true</p><h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c#"><span class="hljs-function">graph TD</span><br><span class="hljs-function"><span class="hljs-title">A</span>(<span class="hljs-params">工业用地效率</span>)--&gt;<span class="hljs-title">B1</span>(<span class="hljs-params">土地利用强度</span>)</span><br><span class="hljs-function">A--&gt;<span class="hljs-title">B2</span>(<span class="hljs-params">土地经济效益</span>)</span><br><span class="hljs-function">B1--&gt;<span class="hljs-title">C1</span>(<span class="hljs-params">容积率</span>)--&gt;<span class="hljs-title">D1</span>(<span class="hljs-params">建筑系数</span>)</span><br><span class="hljs-function">B1--&gt;<span class="hljs-title">C3</span>(<span class="hljs-params">亩均固定资本投入</span>)</span><br><span class="hljs-function">B2--&gt;D1</span><br><span class="hljs-function">B2--&gt;<span class="hljs-title">D2</span>(<span class="hljs-params">亩均税收</span>)</span><br></code></pre></td></tr></table></figure><pre><code class=" mermaid">graph TDA(工业用地效率)--&gt;B1(土地利用强度)A--&gt;B2(土地经济效益)B1--&gt;C1(容积率)--&gt;D1(建筑系数)B1--&gt;C3(亩均固定资本投入)B2--&gt;D1B2--&gt;D2(亩均税收)</code></pre><h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><h2 id="uml"><a href="#uml" class="headerlink" title="uml"></a>uml</h2><hr><p>念奴娇·赤壁怀古</p><p><a href="https://so.gushiwen.cn/authorv_3b99a16ff2dd.aspx">苏轼</a>  <a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%AE%8B%E4%BB%A3">〔宋代〕</a></p><p>大江东去，浪淘尽，千古风流人物。<br>故垒西边，人道是，三国周郎赤壁。<br>乱石穿空，惊涛拍岸，卷起千堆雪。<br>江山如画，一时多少豪杰。</p><p>遥想公瑾当年，小乔初嫁了，雄姿英发。<br>羽扇纶巾，谈笑间，樯橹灰飞烟灭。<br>故国神游，多情应笑我，早生华发。<br>人生如梦，一尊还酹江月。</p><hr>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-ea5c51e1937db5b472fd5e2328a5f346_r.jpg"></p><h1 id="mermaid"><a href="#mermaid" class="headerlink" title="mermaid"></a>mermaid</h1><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>mermaid: true</p><h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c#">graph TD<br>classDef <span class="hljs-literal">default</span> fill: <span class="hljs-meta">#f9a, stroke: #333, stroke-width: 4px;</span><br>A(工业用地效率)--&gt;B1(土地利用强度)<br>A--&gt;B2(土地经济效益)<br>B1--&gt;C1(容积率)--&gt;D1(建筑系数)<br>B1--&gt;C3(亩均固定资本投入)<br>B2--&gt;D1<br>B2--&gt;D2(亩均税收)<br></code></pre></td></tr></table></figure><p>TB - top to bottom<br>TD - top-down&#x2F; same as top to bottom<br>BT - bottom to top<br>RL - right to left<br>LR - left to right</p><pre><code class=" mermaid">graph TDclassDef default fill: #f9a, stroke: #333, stroke-width: 4px;A(工业用地效率)--&gt;B1(土地利用强度)A--&gt;B2(土地经济效益)B1--&gt;C1(容积率)--&gt;D1(建筑系数)B1--&gt;C3(亩均固定资本投入)B2--&gt;D1B2--&gt;D2(亩均税收)</code></pre><h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><h2 id="uml"><a href="#uml" class="headerlink" title="uml"></a>uml</h2><hr><p>念奴娇·赤壁怀古</p><p><a href="https://so.gushiwen.cn/authorv_3b99a16ff2dd.aspx">苏轼</a>  <a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%AE%8B%E4%BB%A3">〔宋代〕</a></p><p>大江东去，浪淘尽，千古风流人物。<br>故垒西边，人道是，三国周郎赤壁。<br>乱石穿空，惊涛拍岸，卷起千堆雪。<br>江山如画，一时多少豪杰。</p><p>遥想公瑾当年，小乔初嫁了，雄姿英发。<br>羽扇纶巾，谈笑间，樯橹灰飞烟灭。<br>故国神游，多情应笑我，早生华发。<br>人生如梦，一尊还酹江月。</p><hr>]]></content>
     
     
     <categories>
@@ -107,27 +126,6 @@
   
   
   <entry>
-    <title>毕业设计</title>
-    <link href="/2022/11/06/java/school/"/>
-    <url>/2022/11/06/java/school/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/R-C%20(2).jpg"></p><h1 id="毕业设计"><a href="#毕业设计" class="headerlink" title="毕业设计"></a>毕业设计</h1><hr><p><a href="https://so.gushiwen.cn/shiwenv_b4fbe7244670.aspx"><strong>赠别二首·其二</strong></a></p><p><a href="https://so.gushiwen.cn/authorv.aspx?name=%E6%9D%9C%E7%89%A7">杜牧</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%94%90%E4%BB%A3">〔唐代〕</a></p><p>多情却似总无情，唯觉樽前笑不成。<br>蜡烛有心还惜别，替人垂泪到天明。</p><hr>]]></content>
-    
-    
-    <categories>
-      
-      <category>工作</category>
-      
-      <category>java</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>java作业</title>
     <link href="/2022/11/06/java/java/"/>
     <url>/2022/11/06/java/java/</url>
@@ -149,6 +147,27 @@
   
   
   <entry>
+    <title>毕业设计</title>
+    <link href="/2022/11/06/java/school/"/>
+    <url>/2022/11/06/java/school/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/R-C%20(2).jpg"></p><h1 id="毕业设计"><a href="#毕业设计" class="headerlink" title="毕业设计"></a>毕业设计</h1><hr><p><a href="https://so.gushiwen.cn/shiwenv_b4fbe7244670.aspx"><strong>赠别二首·其二</strong></a></p><p><a href="https://so.gushiwen.cn/authorv.aspx?name=%E6%9D%9C%E7%89%A7">杜牧</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%94%90%E4%BB%A3">〔唐代〕</a></p><p>多情却似总无情，唯觉樽前笑不成。<br>蜡烛有心还惜别，替人垂泪到天明。</p><hr>]]></content>
+    
+    
+    <categories>
+      
+      <category>java</category>
+      
+      <category>工作</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>书法学习</title>
     <link href="/2022/11/06/day/shufa/"/>
     <url>/2022/11/06/day/shufa/</url>
@@ -160,9 +179,9 @@
       
       <category>学习</category>
       
-      <category>记录</category>
-      
       <category>生活</category>
+      
+      <category>记录</category>
       
     </categories>
     
@@ -193,25 +212,6 @@
   
   
   <entry>
-    <title>c#学习路线</title>
-    <link href="/2022/11/06/csharp/c#%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
-    <url>/2022/11/06/csharp/c#%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="c-学习路线"><a href="#c-学习路线" class="headerlink" title="c#学习路线"></a>c#学习路线</h1><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-2199a29dfca7a04270fafb715f221ac2_720w.webp"><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/aspnetcore-developer-roadmap.zh-Hans.png"></p><pre><code class=" mermaid">graph TDA(c#学习之路)--&gt;B(c#基础)--&gt;C(四大件)C--&gt;C1(数据结构(重要))C--&gt;C2(操作系统)C--&gt;C3(计算机组成原理)C--&gt;C4(计算机网络)</code></pre><hr><p>侠客行</p><p><a href="https://so.gushiwen.cn/authorv_b90660e3e492.aspx">李白</a>  <a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%94%90%E4%BB%A3">〔唐代〕</a></p><p>赵客缦胡缨，吴钩霜雪明。<br>银鞍照白马，飒沓如流星。<br>十步杀一人，千里不留行。<br>事了拂衣去，深藏身与名。<br>闲过信陵饮，脱剑膝前横。<br>将炙啖朱亥，持觞劝侯嬴。<br>三杯吐然诺，五岳倒为轻。<br>眼花耳热后，意气素霓生。<br>救赵挥金槌，邯郸先震惊。<br>千秋二壮士，烜赫大梁城。<br>纵死侠骨香，不惭世上英。<br>谁能书阁下，白首太玄经</p><hr>]]></content>
-    
-    
-    <categories>
-      
-      <category>c#</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>每日记录</title>
     <link href="/2022/11/06/day/%E6%AF%8F%E6%97%A5/"/>
     <url>/2022/11/06/day/%E6%AF%8F%E6%97%A5/</url>
@@ -221,9 +221,9 @@
     
     <categories>
       
-      <category>记录</category>
-      
       <category>生活</category>
+      
+      <category>记录</category>
       
     </categories>
     
