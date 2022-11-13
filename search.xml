@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>图</title>
+      <link href="/2022/11/12/csharp/tu/"/>
+      <url>/2022/11/12/csharp/tu/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/B38A17D34E9DADE17DDC9A880ABC3F2C.jpg"></p><h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213833.jpg"><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/1.jpg"></p><h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213816.jpg"></p><h2 id="时序图"><a href="#时序图" class="headerlink" title="时序图"></a>时序图</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213757.jpg"><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213801.jpg"></p><hr><p>渡易水歌</p><p><a href="https://so.gushiwen.cn/authorv_2128926194cd.aspx">佚名</a>  <a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%85%88%E7%A7%A6">〔先秦〕</a></p><p>风萧萧兮易水寒，壮士一去兮不复还。<br>探虎穴兮入蛟宫，仰天呼气兮成白虹。</p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>算法练习</title>
       <link href="/2022/11/12/csharp/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0/"/>
       <url>/2022/11/12/csharp/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0/</url>
@@ -44,32 +63,11 @@
     
     
     <entry>
-      <title>mermaid学习</title>
-      <link href="/2022/11/08/web/mermaid%E8%AF%AD%E6%B3%95/"/>
-      <url>/2022/11/08/web/mermaid%E8%AF%AD%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/v2-ea5c51e1937db5b472fd5e2328a5f346_r.jpg"></p><h1 id="mermaid"><a href="#mermaid" class="headerlink" title="mermaid"></a>mermaid</h1><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>mermaid: true</p><h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c#">graph TD<br>classDef <span class="hljs-literal">default</span> fill: <span class="hljs-meta">#f9a, stroke: #333, stroke-width: 4px;</span><br>A(工业用地效率)--&gt;B1(土地利用强度)<br>A--&gt;B2(土地经济效益)<br>B1--&gt;C1(容积率)--&gt;D1(建筑系数)<br>B1--&gt;C3(亩均固定资本投入)<br>B2--&gt;D1<br>B2--&gt;D2(亩均税收)<br></code></pre></td></tr></table></figure><p>TB - top to bottom<br>TD - top-down&#x2F; same as top to bottom<br>BT - bottom to top<br>RL - right to left<br>LR - left to right</p><pre><code class=" mermaid">graph TDclassDef default fill: #f9a, stroke: #333, stroke-width: 4px;A(工业用地效率)--&gt;B1(土地利用强度)A--&gt;B2(土地经济效益)B1--&gt;C1(容积率)--&gt;D1(建筑系数)B1--&gt;C3(亩均固定资本投入)B2--&gt;D1B2--&gt;D2(亩均税收)</code></pre><h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><h2 id="uml"><a href="#uml" class="headerlink" title="uml"></a>uml</h2><hr><p>念奴娇·赤壁怀古</p><p><a href="https://so.gushiwen.cn/authorv_3b99a16ff2dd.aspx">苏轼</a>  <a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%AE%8B%E4%BB%A3">〔宋代〕</a></p><p>大江东去，浪淘尽，千古风流人物。<br>故垒西边，人道是，三国周郎赤壁。<br>乱石穿空，惊涛拍岸，卷起千堆雪。<br>江山如画，一时多少豪杰。</p><p>遥想公瑾当年，小乔初嫁了，雄姿英发。<br>羽扇纶巾，谈笑间，樯橹灰飞烟灭。<br>故国神游，多情应笑我，早生华发。<br>人生如梦，一尊还酹江月。</p><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习 </category>
-          
-          <category> 本站 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>设计模式</title>
       <link href="/2022/11/07/csharp/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
       <url>/2022/11/07/csharp/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/sesskik___temptation_by_cati_art_d6l1j4u-fullview.jpg"></p><h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><h2 id="uml类图"><a href="#uml类图" class="headerlink" title="uml类图"></a>uml类图</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201411.jpg"></p><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201420.jpg"><br><a href="">语法学习地址</a></p><h2 id="高内聚低耦合"><a href="#高内聚低耦合" class="headerlink" title="高内聚低耦合"></a>高内聚低耦合</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201424.jpg"></p><h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201438.jpg"><br><a href="">markdown上的学习</a></p><h2 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201448.jpg"></p><h2 id="设计模式-1"><a href="#设计模式-1" class="headerlink" title="设计模式"></a>设计模式</h2><h3 id="工程模式"><a href="#工程模式" class="headerlink" title="工程模式"></a>工程模式</h3><h4 id="简单工厂"><a href="#简单工厂" class="headerlink" title="简单工厂"></a>简单工厂</h4><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201456.jpg"></p><h4 id="工厂方法模式"><a href="#工厂方法模式" class="headerlink" title="工厂方法模式"></a>工厂方法模式</h4><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201502.jpg"></p><h4 id="抽象工厂模式"><a href="#抽象工厂模式" class="headerlink" title="抽象工厂模式"></a>抽象工厂模式</h4><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201509.jpg"></p><h3 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h3><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201515.jpg"></p><h3 id="组合模式"><a href="#组合模式" class="headerlink" title="组合模式"></a>组合模式</h3><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221108201520.jpg"></p><hr><p>沁园春·雪</p><p><a href="https://so.gushiwen.cn/authorv_22550138288c.aspx">毛泽东</a>  <a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E8%BF%91%E7%8E%B0%E4%BB%A3">〔近现代〕</a></p><p>北国风光，千里冰封，万里雪飘。<br>望长城内外，惟余莽莽；大河上下，顿失滔滔。<br>山舞银蛇，原驰蜡象，欲与天公试比高。<br>须晴日，看红装素裹，分外妖娆。<br>江山如此多娇，引无数英雄竞折腰。<br>惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。<br>一代天骄，成吉思汗，只识弯弓射大雕。<br>俱往矣，数风流人物，还看今朝。</p><hr>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/B38A17D34E9DADE19A1E9B8FDFDBD27A.jpg"></p><h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><h2 id="设计思想"><a href="#设计思想" class="headerlink" title="设计思想"></a>设计思想</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112214916.jpg"><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112214922.jpg"></p><h2 id="常用模式"><a href="#常用模式" class="headerlink" title="常用模式"></a>常用模式</h2><h3 id="工厂"><a href="#工厂" class="headerlink" title="工厂"></a>工厂</h3><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215202.jpg"><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215207.jpg"><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215213.jpg"></p><h3 id="单例"><a href="#单例" class="headerlink" title="单例"></a>单例</h3><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215218.jpg"></p><h3 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h3><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215222.jpg"></h2><p>沁园春·雪</p><p><a href="https://so.gushiwen.cn/authorv_22550138288c.aspx">毛泽东</a>  <a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E8%BF%91%E7%8E%B0%E4%BB%A3">〔近现代〕</a></p><p>北国风光，千里冰封，万里雪飘。<br>望长城内外，惟余莽莽；大河上下，顿失滔滔。<br>山舞银蛇，原驰蜡象，欲与天公试比高。<br>须晴日，看红装素裹，分外妖娆。<br>江山如此多娇，引无数英雄竞折腰。<br>惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。<br>一代天骄，成吉思汗，只识弯弓射大雕。<br>俱往矣，数风流人物，还看今朝。</p><hr>]]></content>
       
       
       <categories>
@@ -107,7 +105,7 @@
       <link href="/2022/11/06/csharp/csharp/"/>
       <url>/2022/11/06/csharp/csharp/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/8f43d3cb984565983b69724a9a4f1917.jpg"></p><h1 id="c"><a href="#c" class="headerlink" title="c#"></a>c#</h1><hr><p><a href="https://so.gushiwen.cn/shiwenv_870828ca8aaa.aspx"><strong>行路难·其一</strong></a></p><p><a href="https://so.gushiwen.cn/authorv.aspx?name=%E6%9D%8E%E7%99%BD">李白</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%94%90%E4%BB%A3">〔唐代〕</a></p><p>金樽清酒斗十千，玉盘珍羞直万钱。<br>停杯投箸不能食，拔剑四顾心茫然。<br>欲渡黄河冰塞川，将登太行雪满山。<br>闲来垂钓碧溪上，忽复乘舟梦日边。<br>行路难，行路难，多歧路，今安在？<br>长风破浪会有时，直挂云帆济沧海。</p><hr>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/8f43d3cb984565983b69724a9a4f1917.jpg"></p><h1 id="c"><a href="#c" class="headerlink" title="c#"></a>c#</h1><h2 id="基础入门"><a href="#基础入门" class="headerlink" title="基础入门"></a>基础入门</h2><ul><li>基本语法:<ul><li>单行注释和多行注释<ul><li>&#x2F;&#x2F;&#x2F;用来描述方法等</li><li>&#x2F;&#x2F;写在变量后面，描述值、</li><li>&#x2F;**&#x2F;用来描述思路</li></ul></li><li>每条语句<code>;</code></li><li>建议一条语句一行多行</li><li>代码块<code>&#123;&#125;</code></li><li><code>\n</code>换行</li><li><code>\t</code>制表符</li></ul></li></ul><hr><p><a href="https://so.gushiwen.cn/shiwenv_870828ca8aaa.aspx"><strong>行路难·其一</strong></a></p><p><a href="https://so.gushiwen.cn/authorv.aspx?name=%E6%9D%8E%E7%99%BD">李白</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%94%90%E4%BB%A3">〔唐代〕</a></p><p>金樽清酒斗十千，玉盘珍羞直万钱。<br>停杯投箸不能食，拔剑四顾心茫然。<br>欲渡黄河冰塞川，将登太行雪满山。<br>闲来垂钓碧溪上，忽复乘舟梦日边。<br>行路难，行路难，多歧路，今安在？<br>长风破浪会有时，直挂云帆济沧海。</p><hr>]]></content>
       
       
       <categories>
