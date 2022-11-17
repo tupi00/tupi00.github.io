@@ -17,16 +17,16 @@
   <meta name="author" content="tupi">
   <meta name="keywords" content="unity">
   
-    <meta name="description" content="设计模式设计思想 常用模式工厂 单例 组合沁园春·雪 毛泽东  〔近现代〕 北国风光，千里冰封，万里雪飘。望长城内外，惟余莽莽；大河上下，顿失滔滔。山舞银蛇，原驰蜡象，欲与天公试比高。须晴日，看红装素裹，分外妖娆。江山如此多娇，引无数英雄竞折腰。惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。一代天骄，成吉思汗，只识弯弓射大雕。俱往矣，数风流人物，还看今朝。">
+    <meta name="description" content="设计模式设计思想高内聚,低耦合总体要求:  每个成员方法只完成一件事 减少成员方法的互相调用 减少类的互相调用实现方式:   减少类的继承,多用接口隐藏实现细节 模块的功能划分尽可能单一 一个定义只在一个地方出现 少用全局变量 多用设计模式 减少硬编码 对外只暴露接口 除非是接口，修改不得影响其他模块 避免直接调用其他模块. 如果必须耦合:尽量值传递,少作为开关,访问入口单一.    六大原则">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式">
 <meta property="og:url" content="http://tupi00.github.io/2022/11/07/csharp/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="tupi的博客">
-<meta property="og:description" content="设计模式设计思想 常用模式工厂 单例 组合沁园春·雪 毛泽东  〔近现代〕 北国风光，千里冰封，万里雪飘。望长城内外，惟余莽莽；大河上下，顿失滔滔。山舞银蛇，原驰蜡象，欲与天公试比高。须晴日，看红装素裹，分外妖娆。江山如此多娇，引无数英雄竞折腰。惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。一代天骄，成吉思汗，只识弯弓射大雕。俱往矣，数风流人物，还看今朝。">
+<meta property="og:description" content="设计模式设计思想高内聚,低耦合总体要求:  每个成员方法只完成一件事 减少成员方法的互相调用 减少类的互相调用实现方式:   减少类的继承,多用接口隐藏实现细节 模块的功能划分尽可能单一 一个定义只在一个地方出现 少用全局变量 多用设计模式 减少硬编码 对外只暴露接口 除非是接口，修改不得影响其他模块 避免直接调用其他模块. 如果必须耦合:尽量值传递,少作为开关,访问入口单一.    六大原则">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/B38A17D34E9DADE19A1E9B8FDFDBD27A.jpg">
 <meta property="article:published_time" content="2022-11-07T01:43:21.890Z">
-<meta property="article:modified_time" content="2022-11-13T02:29:41.915Z">
+<meta property="article:modified_time" content="2022-11-16T09:32:22.526Z">
 <meta property="article:author" content="tupi">
 <meta property="article:tag" content="unity">
 <meta name="twitter:card" content="summary_large_image">
@@ -72,7 +72,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"tupi00.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"tupi00.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          170 字
+          1k 字
         
       </span>
     
@@ -238,7 +238,7 @@
         
         
         
-          2 分钟
+          9 分钟
         
       </span>
     
@@ -405,7 +405,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：10 小时前
+                    本文最后更新于：1 天前
                   
                 
               </p>
@@ -414,10 +414,80 @@
               <div class="markdown-body">
                 
                 <p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/B38A17D34E9DADE19A1E9B8FDFDBD27A.jpg" srcset="/img/loading.gif" lazyload></p>
-<h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><h2 id="设计思想"><a href="#设计思想" class="headerlink" title="设计思想"></a>设计思想</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112214916.jpg" srcset="/img/loading.gif" lazyload><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112214922.jpg" srcset="/img/loading.gif" lazyload></p>
-<h2 id="常用模式"><a href="#常用模式" class="headerlink" title="常用模式"></a>常用模式</h2><h3 id="工厂"><a href="#工厂" class="headerlink" title="工厂"></a>工厂</h3><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215202.jpg" srcset="/img/loading.gif" lazyload><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215207.jpg" srcset="/img/loading.gif" lazyload><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215213.jpg" srcset="/img/loading.gif" lazyload></p>
-<h3 id="单例"><a href="#单例" class="headerlink" title="单例"></a>单例</h3><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215218.jpg" srcset="/img/loading.gif" lazyload></p>
-<h3 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h3><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215222.jpg" srcset="/img/loading.gif" lazyload></h2><p>沁园春·雪</p>
+<h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><h2 id="设计思想"><a href="#设计思想" class="headerlink" title="设计思想"></a>设计思想</h2><h3 id="高内聚-低耦合"><a href="#高内聚-低耦合" class="headerlink" title="高内聚,低耦合"></a>高内聚,低耦合</h3><p>总体要求:</p>
+<ol>
+<li>每个成员方法只完成一件事</li>
+<li>减少成员方法的互相调用</li>
+<li>减少类的互相调用<br>实现方式:</li>
+</ol>
+<ul>
+<li>减少类的继承,多用接口隐藏实现细节</li>
+<li>模块的功能划分尽可能单一</li>
+<li>一个定义只在一个地方出现</li>
+<li>少用全局变量</li>
+<li>多用设计模式</li>
+<li>减少硬编码</li>
+<li>对外只暴露接口</li>
+<li>除非是接口，修改不得影响其他模块</li>
+<li>避免直接调用其他模块.<ul>
+<li>如果必须耦合:尽量值传递,少作为开关,访问入口单一.<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112214916.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+</ul>
+<h3 id="六大原则"><a href="#六大原则" class="headerlink" title="六大原则"></a>六大原则</h3><ul>
+<li>S 个方法只一件事(一个接口尽可能只有一个功能)</li>
+<li>O 扩展开放,对修改关闭</li>
+<li>L 类能出现的地方子类都能出现.输入参数可以放大,输出参数可以缩小</li>
+<li>I 个对象对其他对象最少了解.君子之交.</li>
+<li>I 类与类间的依赖在最小接口上</li>
+<li>D 向接口编程。每个类都有接口&#x2F;抽象类，不从具体派生，补充协议基类方法.<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112214922.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+<h2 id="常用模式"><a href="#常用模式" class="headerlink" title="常用模式"></a>常用模式</h2><h3 id="创建型"><a href="#创建型" class="headerlink" title="创建型"></a>创建型</h3><h4 id="工厂"><a href="#工厂" class="headerlink" title="工厂"></a>工厂</h4><ul>
+<li>简单工厂:一个用于建对象的类<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215202.jpg" srcset="/img/loading.gif" lazyload></li>
+<li>工厂方法:一个用于创建对象的接口&#x2F;抽象类,派生类决定实例化的类型<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215207.jpg" srcset="/img/loading.gif" lazyload></li>
+<li>抽象工厂方法:有多个抽象的产品<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215213.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+<h4 id="单例"><a href="#单例" class="headerlink" title="单例"></a>单例</h4><p>保证一个类只有一个实例,而且自动实例化并且向整个系统提供这一个实例.(同一个对象)<br>构造方法私有化.</p>
+<ul>
+<li>饿汉式:类加载时立即初始化,创建实例.<ul>
+<li>静态字段+静态方法</li>
+<li>静态字段+静态代码块</li>
+</ul>
+</li>
+<li>懒汉式<ol>
+<li>静态字段&#x3D;null;</li>
+<li>静态的getInstance<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112215218.jpg" srcset="/img/loading.gif" lazyload><br>许多开发者将单例模式视为一种反模式。 因此它在 C# 代码中的使用频率正在逐步减少。</li>
+</ol>
+</li>
+</ul>
+<h4 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h4><p>复制原有的对象，又无需要使代码依赖他们的类.<br>(在表面不用new)</p>
+<ul>
+<li>仅有克隆方法的接口</li>
+<li>类实现接口<ul>
+<li>构造函数接受本类型.并对所需要的数据成员赋值</li>
+<li>Clone方法返回接口，参数为接口<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221116171644.jpg" srcset="/img/loading.gif" lazyload><blockquote>
+<p>c#实现:<code>Object.MemberwiseClone()</code>就是当前 Object 的浅表副本。克隆方法返回即可.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="结构型"><a href="#结构型" class="headerlink" title="结构型"></a>结构型</h3><h4 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h4><p>用树性结构在组合对象.<br>盒子&#x3D;(盒子(盒子+产品)+产品).操作时对所有</p>
+<ol>
+<li>通用接口有一个总方法</li>
+<li>叶节点实现方法</li>
+<li>组合类<ul>
+<li>有个通用接口的数组子元素</li>
+<li>实现方法大部分工作交由子元素完成.<ul>
+<li>遍历子元素，执行接口方法</li>
+</ul>
+</li>
+<li>对子元素的增删查.<br>确定:对于功能差异较大的类， 提供公共接口或许会有困难。 在特定情况下， 你需要过度一般化组件接口， 使其变得令人难以理解。<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221116162404.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+</ol>
+<h4 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h4><h3 id="行为型"><a href="#行为型" class="headerlink" title="行为型"></a>行为型</h3><hr>
+<p>沁园春·雪</p>
 <p><a target="_blank" rel="noopener" href="https://so.gushiwen.cn/authorv_22550138288c.aspx">毛泽东</a>  <a target="_blank" rel="noopener" href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E8%BF%91%E7%8E%B0%E4%BB%A3">〔近现代〕</a></p>
 <p>北国风光，千里冰封，万里雪飘。<br>望长城内外，惟余莽莽；大河上下，顿失滔滔。<br>山舞银蛇，原驰蜡象，欲与天公试比高。<br>须晴日，看红装素裹，分外妖娆。<br>江山如此多娇，引无数英雄竞折腰。<br>惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。<br>一代天骄，成吉思汗，只识弯弓射大雕。<br>俱往矣，数风流人物，还看今朝。</p>
 <hr>

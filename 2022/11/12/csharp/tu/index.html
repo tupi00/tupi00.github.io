@@ -17,16 +17,16 @@
   <meta name="author" content="tupi">
   <meta name="keywords" content="unity">
   
-    <meta name="description" content="图类图 流程图 时序图  渡易水歌 佚名  〔先秦〕 风萧萧兮易水寒，壮士一去兮不复还。探虎穴兮入蛟宫，仰天呼气兮成白虹。">
+    <meta name="description" content="图类图 类 三格 上层类名，中层属性，下层方法 +公有,-私有,#受保护的 访问权限 名(名 类型):类型 接口《interface》 抽象《abstract》   关系: 关联:拥有数据成员或者使用类. 单向:箭头 双向:线 自关:指向自己的箭头   聚合:整体包含部分,可分的数据成员。机车和发动机。空心方块+箭头. 组合:部分不可离开整体的数据成员。人头和嘴。实心方块+箭头 依赖:数据成员的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="图">
 <meta property="og:url" content="http://tupi00.github.io/2022/11/12/csharp/tu/index.html">
 <meta property="og:site_name" content="tupi的博客">
-<meta property="og:description" content="图类图 流程图 时序图  渡易水歌 佚名  〔先秦〕 风萧萧兮易水寒，壮士一去兮不复还。探虎穴兮入蛟宫，仰天呼气兮成白虹。">
+<meta property="og:description" content="图类图 类 三格 上层类名，中层属性，下层方法 +公有,-私有,#受保护的 访问权限 名(名 类型):类型 接口《interface》 抽象《abstract》   关系: 关联:拥有数据成员或者使用类. 单向:箭头 双向:线 自关:指向自己的箭头   聚合:整体包含部分,可分的数据成员。机车和发动机。空心方块+箭头. 组合:部分不可离开整体的数据成员。人头和嘴。实心方块+箭头 依赖:数据成员的">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/B38A17D34E9DADE17DDC9A880ABC3F2C.jpg">
 <meta property="article:published_time" content="2022-11-12T13:42:50.173Z">
-<meta property="article:modified_time" content="2022-11-12T13:47:33.744Z">
+<meta property="article:modified_time" content="2022-11-16T09:19:03.500Z">
 <meta property="article:author" content="tupi">
 <meta property="article:tag" content="unity">
 <meta name="twitter:card" content="summary_large_image">
@@ -72,7 +72,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"tupi00.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"tupi00.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          53 字
+          374 字
         
       </span>
     
@@ -238,7 +238,7 @@
         
         
         
-          1 分钟
+          4 分钟
         
       </span>
     
@@ -414,9 +414,58 @@
               <div class="markdown-body">
                 
                 <p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/B38A17D34E9DADE17DDC9A880ABC3F2C.jpg" srcset="/img/loading.gif" lazyload></p>
-<h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213833.jpg" srcset="/img/loading.gif" lazyload><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/1.jpg" srcset="/img/loading.gif" lazyload></p>
-<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213816.jpg" srcset="/img/loading.gif" lazyload></p>
-<h2 id="时序图"><a href="#时序图" class="headerlink" title="时序图"></a>时序图</h2><p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213757.jpg" srcset="/img/loading.gif" lazyload><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213801.jpg" srcset="/img/loading.gif" lazyload></p>
+<h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><ul>
+<li>类 三格 上层类名，中层属性，下层方法<ul>
+<li><code>+</code>公有,<code>-</code>私有,<code>#</code>受保护的</li>
+<li><code>访问权限 名(名 类型):类型</code></li>
+<li>接口<code>《interface》</code></li>
+<li>抽象<code>《abstract》</code></li>
+</ul>
+</li>
+<li>关系:<ul>
+<li>关联:拥有数据成员或者使用类.<ul>
+<li>单向:箭头</li>
+<li>双向:线</li>
+<li>自关:指向自己的箭头</li>
+</ul>
+</li>
+<li>聚合:整体包含部分,可分的数据成员。机车和发动机。空心方块+箭头.</li>
+<li>组合:部分不可离开整体的数据成员。人头和嘴。实心方块+箭头</li>
+<li>依赖:数据成员的方法签名:</li>
+</ul>
+</li>
+<li>继承:实线空三角</li>
+<li>实现:虚线空三角<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213833.jpg" srcset="/img/loading.gif" lazyload><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/1.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><ul>
+<li>圆开始接受</li>
+<li>方处理</li>
+<li>菱形判断</li>
+<li>不规则的文档:文件输入&#x2F;输出</li>
+<li>箭头流向.<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213816.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+<h2 id="时序图"><a href="#时序图" class="headerlink" title="时序图"></a>时序图</h2><p>要素:</p>
+<ul>
+<li>角色(主体),</li>
+<li>对象(客体)<ul>
+<li>生命线。对象消亡的时间</li>
+<li>控制焦点(方块)，对象操作时间</li>
+</ul>
+</li>
+<li>消息<ul>
+<li>同步:黑三角</li>
+<li>异步:箭头</li>
+<li>返回:虚箭头</li>
+<li>可自关联</li>
+</ul>
+</li>
+<li>组合片段<ul>
+<li>Opt—if</li>
+<li>Alt—ifelse</li>
+<li>Loop<br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213757.jpg" srcset="/img/loading.gif" lazyload><br><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/IMG20221112213801.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+</ul>
 <hr>
 <p>渡易水歌</p>
 <p><a target="_blank" rel="noopener" href="https://so.gushiwen.cn/authorv_2128926194cd.aspx">佚名</a>  <a target="_blank" rel="noopener" href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E5%85%88%E7%A7%A6">〔先秦〕</a></p>
