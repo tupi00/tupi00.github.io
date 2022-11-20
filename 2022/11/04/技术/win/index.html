@@ -1,0 +1,805 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+<meta name="referrer" content="no-referrer" />
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#1f3144">
+  <meta name="author" content="tupi">
+  <meta name="keywords" content="unity">
+  
+    <meta name="description" content="win操作基本123456789cls	清除doskey&#x2F;HISTORY	历史date  &#x2F;t	当前日期time &#x2F;t	当前时间color 02 绿色color 07 黑色start	运行程序exit	退出cmdshutdown	关机等 	&#x2F;s关机&#x2F;sg彻底关机  切换12cd  cd ..  目录1234dir	显示当前目录的子文件和文件dir &#x2F;b	只显示名称treedir &#x2F;S	本电脑全部">
+<meta property="og:type" content="article">
+<meta property="og:title" content="windows shell">
+<meta property="og:url" content="http://tupi00.github.io/2022/11/04/%E6%8A%80%E6%9C%AF/win/index.html">
+<meta property="og:site_name" content="tupi的博客">
+<meta property="og:description" content="win操作基本123456789cls	清除doskey&#x2F;HISTORY	历史date  &#x2F;t	当前日期time &#x2F;t	当前时间color 02 绿色color 07 黑色start	运行程序exit	退出cmdshutdown	关机等 	&#x2F;s关机&#x2F;sg彻底关机  切换12cd  cd ..  目录1234dir	显示当前目录的子文件和文件dir &#x2F;b	只显示名称treedir &#x2F;S	本电脑全部">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/sesskik___year_of_the_snake_by_cati_art_d5ujgmi-350t-2x.jpg">
+<meta property="article:published_time" content="2022-11-04T11:06:43.880Z">
+<meta property="article:modified_time" content="2022-11-13T08:25:24.284Z">
+<meta property="article:author" content="tupi">
+<meta property="article:tag" content="unity">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/sesskik___year_of_the_snake_by_cati_art_d5ujgmi-350t-2x.jpg">
+  
+  
+  
+  <title>windows shell - tupi的博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"tupi00.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>归来</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="windows shell"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        tupi
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-11-04 19:06" pubdate>
+          2022年11月4日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          32 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="学习"
+        id="heading-4ef520d6cd20ba4a727af08e17e4939e" role="tab" data-toggle="collapse" href="#collapse-4ef520d6cd20ba4a727af08e17e4939e"
+        aria-expanded="true"
+      >
+        学习
+        <span class="list-group-count">(10)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-4ef520d6cd20ba4a727af08e17e4939e"
+           role="tabpanel" aria-labelledby="heading-4ef520d6cd20ba4a727af08e17e4939e">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2022/11/05/%E6%8A%80%E6%9C%AF/wpf/" title="WPF学习之旅"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">WPF学习之旅</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/06/%E6%8A%80%E6%9C%AF/csharp/" title="c#学习"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">c#学习</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/04/%E6%8A%80%E6%9C%AF/git/" title="git"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">git</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/06/%E5%AD%A6%E6%A0%A1/java/" title="java作业"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">java作业</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/06/%E6%8A%80%E6%9C%AF/unity/" title="unity的学习"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">unity的学习</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/04/%E6%8A%80%E6%9C%AF/win/" title="windows shell"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">windows shell</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/12/%E6%8A%80%E6%9C%AF/tu/" title="图"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">图</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/06/%E6%8A%80%E6%9C%AF/1/" title="数据结构和算法的学习"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">数据结构和算法的学习</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/06/%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/" title="数据结构和算法的学习"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">数据结构和算法的学习</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/07/%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="设计模式"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">设计模式</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">windows shell</h1>
+            
+              <p class="note note-info">
+                
+                  
+                    本文最后更新于：7 天前
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/sesskik___year_of_the_snake_by_cati_art_d5ujgmi-350t-2x.jpg" srcset="/img/loading.gif" lazyload></p>
+<h1 id="win"><a href="#win" class="headerlink" title="win"></a>win</h1><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><h3 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs shell">cls	清除<br>doskey/HISTORY	历史<br>date  /t	当前日期<br>time /t	当前时间<br>color 02 绿色<br>color 07 黑色<br>start	运行程序<br>exit	退出cmd<br>shutdown	关机等 	/s关机/sg彻底关机<br></code></pre></td></tr></table></figure>
+
+<h3 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd  <br>cd ..<br></code></pre></td></tr></table></figure>
+
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell">dir	显示当前目录的子文件和文件<br>dir /b	只显示名称<br>tree<br>dir /S	本电脑全部文件<br></code></pre></td></tr></table></figure>
+
+<h3 id="改名"><a href="#改名" class="headerlink" title="改名"></a>改名</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">ren<br></code></pre></td></tr></table></figure>
+
+<h3 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell">md <br>md movie music 	在当前目录中创建名为movie和music的文件夹<br>md d:\test\movie	创建d:\test\movie目录<br>rd	删除<br></code></pre></td></tr></table></figure>
+
+<h3 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs shell">copy<br>copy key.txt c:\doc 将当前目录下的key.txt拷贝到c:\doc下（若doc中也存在一个key.txt文件，会询问是否覆盖）<br>copy jobs c:\doc 	将当前目录下jobs文件夹中文件（不递归子目录）拷贝到c:\doc下（若doc中也存在相应的文件，会询问是否覆盖）<br>copy key.txt c:\doc\key_bak.txt	将当前目录下的key.txt拷贝到c:\doc下，并重命名为key_bak.txt（若doc中也存在一个key_bak.txt文件，会询问是否覆盖)<br>/Y 不询问<br>copy key.txt +	复制到自己(相当于重置日期)<br>copy /Y key1.txt + key2.txt key.txt	将当前目录下的key1.txt与key2.txt的内容合并写入key.txt中（不询问，直接覆盖写)<br></code></pre></td></tr></table></figure>
+
+<h3 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell">move *.png test 	将当前目录下的png图片移动到当前目录下test文件夹中 （若test中也存在同名的png图片，会询问是否覆盖）<br>move /Y *.png test 	将当前目录下的png图片移动到当前目录下test文件夹中 （不询问，直接覆盖写)<br>move 1.png d:\test\2.png	将当前目录下的1.png移动到d盘test文件夹中，并重命名为2.png （若test中也存在同名的png图片，会询问是否覆盖）<br>move test d:\new 	若d盘中存在new文件夹，将当前目录下的test文件夹移动到d盘new文件夹中；若不存在，将当前目录下的test文件夹移动到d盘，并重命名为new (无后缀的未知格式)<br></code></pre></td></tr></table></figure>
+
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">del test	删除当前目录下的test文件夹中的所有非只读文件（子目录下的文件不删除；删除前会进行确认；等价于del test\*）<br>del /f test 	<br>删除当前目录下的test文件夹中的所有文件（含只读文件；子目录下的文件不删除；删除前会进行确认；等价于del /f test\*）<br><br>del /f /s /q test d:\test2\*.doc 	删除当前目录下的test文件夹中所有文件及d:\test2中所有doc文件（含只读文件；递归子目录下的文件；删除前不确认del<br></code></pre></td></tr></table></figure>
+
+<h3 id="文件查看"><a href="#文件查看" class="headerlink" title="文件查看"></a>文件查看</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell">type<br>type c:\11.txt  	显示c盘中11.txt的文本内容<br>type conf.ini 	显示当前目录下conf.ini的文本内容<br>type c:\11.txt | more 	<br>分页显示c盘中11.txt的文本内容  <br><br>more	<br>more conf.ini	逐屏的显示当前目录下conf.ini的文本内容   【空格：下一屏 q：退出 】<br></code></pre></td></tr></table></figure>
+
+<h3 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs shell">&amp;	顺序执行多条命令，而不管命令是否执行成功<br>cd /d d:\src&amp;work.exe /o c:\result.txt	先将当前工作目录切换到d:\src下，然后执行work.exe /o c:\result.txt命令<br>&amp;&amp;	顺序执行多条命令，当碰到执行出错的命令后将不执行后面的命令<br>find &quot;ok&quot; c:\test.txt &amp;&amp; echo	如果找到了&quot;ok&quot;字样，就显示&quot;成功&quot;，找不到就不显示<br>||	顺序执行多条命令，当碰到执行正确的命令后将不执行后面的命令<br>find &quot;ok&quot; c:\test.txt || echo	如果找不到&quot;ok&quot;字样，就显示&quot;不成功&quot;，找到了就不显示<br>,	<br>在某些特殊的情况下可以用来代替空格使用<br><br>dir,c:\  	<br>相当于：dir c:\<br><br>;	当命令相同的时候,可以将不同的目标用;隔离开来但执行效果不变。如执行过程中发生错误则只返回错误报告但程序还是会继续执行<br>dir c:\;d:\;e:\  	dir c:\    dir d:\     dir e:\<br></code></pre></td></tr></table></figure>
+
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs shell">echo	输出一个&quot;回车换行&quot;，空白行<br>echo off  	后续所有命令在执行前，不打印出命令的内容<br>echo on  	后续所有命令在执行前，打印出命令的内容<br>echo 123  	输出123到终端屏幕<br>echo &quot;Hello World!!!&quot;  	输出Hello World!!!到终端屏幕<br>echo test &gt; p1.txt 	输出test的字符串到当前目录中的p1.txt文件中（以覆盖的方式）<br></code></pre></td></tr></table></figure>
+
+<h3 id="文本处理"><a href="#文本处理" class="headerlink" title="文本处理"></a>文本处理</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs shell">find	<br>find /N /I &quot;pid&quot; 1.txt 	在1.txt文件中忽略大小写查找pid字符串，并带行号显示查找后的结果<br>find /C &quot;exe&quot; 1.txt	只显示在1.txt文件中查找到exe字符串的次数<br>find /V &quot;exe&quot; 1.txt	显示未包含1.txt文件中未包含exe字符串的行s<br><br>findstr	<br>findstr &quot;hello world&quot; 1.txt 	在1.txt文件中搜索hello或world<br>findstr /c:&quot;hello world&quot; 1.txt	在1.txt文件中搜索hello world<br>findstr /c:&quot;hello world&quot; 1.txt nul	<br>在1.txt文件中搜索hello world，并在每行结果前打印出1.txt:   注：findstr只有在2个及以上文件中搜索字符串时才会打印出每个文件的文件名，nul表示一个空文件<br><br>findstr /s /i &quot;Hello&quot; *.*	不区分大小写，在当前目录和所有子目录中的所有文件中的hello<br></code></pre></td></tr></table></figure>
+
+<h3 id="网络操作"><a href="#网络操作" class="headerlink" title="网络操作"></a>网络操作</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs shell">ping<br>ing baidu.com	测试与baidu服务器的连接情况<br>ping chen-pc0  	<br>测试机器名为chen-pc0的连接情况<br><br>ping 220.181.111.86  	测试与ip为220.181.111.86的连接情况<br>ping -l 65500 -n 10 qq.com  	向qq.com发送10次65500字节的ping<br>ping -n 6 127.0.0.1	<br>对当前主机执行6次ping操作（花费时间为5s）<br><br>ipconfig /all 查看本地ip地址等详细信息<br>nslookup www.cnblogs.com 获取www.cnblogs.com的域名解析<br><br>netstat<br>netstat -a	查看开启了哪些端口<br>netstat -n 	<br>查看端口的网络连接情况<br>netstat -n 	<br>查看端口的网络连接情况<br>netstat -p tcp 	查看tcp协议的使用情况<br><br>route print  显示出IP路由<br><br>telnet 182.140.167.44 8000  	探测182.140.167.44是否使用TCP协议监听8000端口（注意：telnet命令不支持UDP端口检测）<br></code></pre></td></tr></table></figure>
+
+<h3 id="进程操作"><a href="#进程操作" class="headerlink" title="进程操作"></a>进程操作</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs shell">tasklist	全部进程<br><br>taskkill 	<br>taskkill /im notepad.exe	结束名为notepad.exe的进程<br>taskkill /pid 1230 /pid 1241 /pid 1253 /t	结束pid为1230、1241和1253的进程以及由它们启动起来的子进程<br>taskkill /f /im cmd.exe /t	强制结束有名为cmd.exe的进程以及由它启动起来的子进程<br><br>user<br>net user 查看当前机器上的所有用户<br>net user Administrator  	<br>查看当前机器上的Administrator用户的信息<br></code></pre></td></tr></table></figure>
+
+<p>————————————————<br>版权声明：本文为CSDN博主「IT—INTEREST_挪吒」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/cldimd/article/details/103302720">https://blog.csdn.net/cldimd/article/details/103302720</a></p>
+<h2 id="我的脚本"><a href="#我的脚本" class="headerlink" title="我的脚本"></a>我的脚本</h2><h3 id="上传hexo到github"><a href="#上传hexo到github" class="headerlink" title="上传hexo到github"></a>上传hexo到github</h3><p>bat格式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs shell">start /min hexo clean<br>ping -n 20 127.0.0.1<br>start /min hexo g<br>ping -n 20 127.0.0.1<br>start /min hexo d<br>ping -n 20 127.0.0.1<br>cd .deploy_git<br>git add .<br>git commit -m &quot;describe&quot;<br>git remote add origin<br>git push<br>start taskkill /f /im cmd.exe<br></code></pre></td></tr></table></figure>
+
+<hr>
+<p>沁园春·长沙</p>
+<p><a target="_blank" rel="noopener" href="https://so.gushiwen.cn/authorv_22550138288c.aspx">毛泽东</a>  <a target="_blank" rel="noopener" href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%E8%BF%91%E7%8E%B0%E4%BB%A3">〔近现代〕</a></p>
+<p>独立寒秋，湘江北去，橘子洲头。<br>看万山红遍，层林尽染；漫江碧透，百舸争流。<br>鹰击长空，鱼翔浅底，万类霜天竞自由。<br>怅寥廓，问苍茫大地，谁主沉浮？</p>
+<p>携来百侣曾游。忆往昔峥嵘岁月稠。<br>恰同学少年，风华正茂；书生意气，挥斥方遒。<br>指点江山，激扬文字，粪土当年万户侯。<br>曾记否，到中流击水，浪遏飞舟？</p>
+<hr>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="category-chain-item">学习</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>windows shell</div>
+      <div>http://tupi00.github.io/2022/11/04/技术/win/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>tupi</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年11月4日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/11/05/%E6%9C%AC%E7%AB%99%E7%9B%B8%E5%85%B3/test/" title="内部测试页面">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">内部测试页面</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/11/04/%E6%8A%80%E6%9C%AF/git/" title="git">
+                        <span class="hidden-mobile">git</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
