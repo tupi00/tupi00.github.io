@@ -1,0 +1,868 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+<meta name="referrer" content="no-referrer" />
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#1f3144">
+  <meta name="author" content="tupi">
+  <meta name="keywords" content="unity">
+  
+    <meta name="description" content="江城子·乙卯正月二十日夜记梦苏轼 〔宋代〕 十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈  defualt文本和default操作符 9.0SkipLocalsInit 特性,防止编译器发.locals init标志(局部变量不初始化为默认值)new()默认构造函数stat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="csharp新特性">
+<meta property="og:url" content="http://tupi00.github.io/2022/11/07/skill/csharp/%E6%96%B0%E7%89%B9%E6%80%A7/index.html">
+<meta property="og:site_name" content="tupi的博客">
+<meta property="og:description" content="江城子·乙卯正月二十日夜记梦苏轼 〔宋代〕 十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈  defualt文本和default操作符 9.0SkipLocalsInit 特性,防止编译器发.locals init标志(局部变量不初始化为默认值)new()默认构造函数stat">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221105200311.jpg">
+<meta property="article:published_time" content="2022-11-07T03:15:45.076Z">
+<meta property="article:modified_time" content="2022-12-15T03:20:18.933Z">
+<meta property="article:author" content="tupi">
+<meta property="article:tag" content="unity">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221105200311.jpg">
+  
+  
+  
+  <title>csharp新特性 - tupi的博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"tupi00.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>归来</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="csharp新特性"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        tupi
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-11-07 11:15" pubdate>
+          2022年11月7日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.6k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          39 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="学习"
+        id="heading-4ef520d6cd20ba4a727af08e17e4939e" role="tab" data-toggle="collapse" href="#collapse-4ef520d6cd20ba4a727af08e17e4939e"
+        aria-expanded="true"
+      >
+        学习
+        <span class="list-group-count">(6)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-4ef520d6cd20ba4a727af08e17e4939e"
+           role="tabpanel" aria-labelledby="heading-4ef520d6cd20ba4a727af08e17e4939e">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2022/12/01/skill/csharp/csharp/" title="c#学习笔记"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">c#学习笔记</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/20/skill/csharp/%E8%A7%84%E8%8C%83/" title="c#规范"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">c#规范</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/07/skill/csharp/%E6%96%B0%E7%89%B9%E6%80%A7/" title="csharp新特性"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">csharp新特性</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/09/skill/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" title="学习路线"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">学习路线</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/12/15/skill/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/" title="数据结构和算法的学习"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">数据结构和算法的学习</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/07/skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="设计模式笔记"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">设计模式笔记</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="c#"
+        id="heading-240aa2cec4b29c56f3bee520a8dcee7e" role="tab" data-toggle="collapse" href="#collapse-240aa2cec4b29c56f3bee520a8dcee7e"
+        aria-expanded="true"
+      >
+        c#
+        <span class="list-group-count">(3)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-240aa2cec4b29c56f3bee520a8dcee7e"
+           role="tabpanel" aria-labelledby="heading-240aa2cec4b29c56f3bee520a8dcee7e">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2022/12/01/skill/csharp/csharp/" title="c#学习笔记"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">c#学习笔记</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/20/skill/csharp/%E8%A7%84%E8%8C%83/" title="c#规范"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">c#规范</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/07/skill/csharp/%E6%96%B0%E7%89%B9%E6%80%A7/" title="csharp新特性"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">csharp新特性</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">csharp新特性</h1>
+            
+              <p class="note note-info">
+                
+                  
+                    本文最后更新于：26 分钟前
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <p><img src="https://blog-1314860893.cos.ap-nanjing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221105200311.jpg" srcset="/img/loading.gif" lazyload><br>江城子·乙卯正月二十日夜记梦<br>苏轼 〔宋代〕</p>
+<p>十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。<br>夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈</p>
+<hr>
+<p>defualt文本和default操作符</p>
+<h1 id="9-0"><a href="#9-0" class="headerlink" title="9.0"></a>9.0</h1><p>SkipLocalsInit 特性,防止编译器发<code>.locals init</code>标志(局部变量不初始化为默认值)<br>new()默认构造函数<br>static用于lambda防止捕捉变量<br>foreach识别GetEnumeartor()<br>弃元_作为lambda参数<br>本地函数的属性:<code>bool IsValid([NotNullWhen(true)] string? line)&#123;&#125;</code><br>with 表达式，使用修改的特定属性和字段生成其操作数的副本.必须是记录，或结构类型和匿名类型</p>
+<h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><p>record 用于描述应用于所有记录类型的行为。<br>默认class封装数据的引用类型</p>
+<p>主要用于不可变的数据模型，通过init来实现</p>
+<blockquote>
+<p>struct不支持集成，确定相等性较低(ValueType.Equals 方法使用反射来查找所有字段)，每个实例都是完整的副本</p>
+</blockquote>
+<h3 id="属性定义的位置语法"><a href="#属性定义的位置语法" class="headerlink" title="属性定义的位置语法"></a>属性定义的位置语法</h3><p>默认是private的</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c#">Person person = <span class="hljs-keyword">new</span>(<span class="hljs-string">&quot;Nancy&quot;</span>, <span class="hljs-string">&quot;Davolio&quot;</span>);<br>Console.WriteLine(person);<br><span class="hljs-comment">// output: Person &#123; FirstName = Nancy, LastName = Davolio &#125;</span><br><br><span class="hljs-keyword">record</span> <span class="hljs-title">Person</span>(<span class="hljs-title">string</span> <span class="hljs-title">FirstName</span>, <span class="hljs-title">string</span> <span class="hljs-title">LastName</span>);<br></code></pre></td></tr></table></figure>
+<ul>
+<li>可没有对应的属性<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c#"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title">Person</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> FirstName, <span class="hljs-built_in">string</span> LastName</span>)</span><br>&#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-built_in">string</span>[] PhoneNumbers &#123; <span class="hljs-keyword">get</span>; <span class="hljs-keyword">init</span>; &#125; = Array.Empty&lt;<span class="hljs-built_in">string</span>&gt;();<br>&#125;;<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="不可变性"><a href="#不可变性" class="headerlink" title="不可变性"></a>不可变性</h3><p>声明init属性具有浅的不可变性。</p>
+<p>初始化后，将不能更改值型属性的值或引用型属性的引用。 不过，引用型属性引用的数据是可以更改的。 如数组的元素</p>
+<h3 id="值想等性"><a href="#值想等性" class="headerlink" title="值想等性"></a>值想等性</h3><ul>
+<li>class类型引用</li>
+<li>struct类型相同类型相同值</li>
+</ul>
+<ul>
+<li>record想同类型且存储相同的值.</li>
+</ul>
+<p>record struct依赖的不是反射,实现由编译器合成，使用声明的数据成员.如Object.Equals(Object) 的替代，Equals()，&#x3D;&#x3D;和!&#x3D;的代替</p>
+<h3 id="非破坏性变化"><a href="#非破坏性变化" class="headerlink" title="非破坏性变化"></a>非破坏性变化</h3><p><code>with</code></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c#">Person person2 = person1 <span class="hljs-keyword">with</span> &#123; FirstName = <span class="hljs-string">&quot;John&quot;</span> &#125;;<br>person2 = person1 <span class="hljs-keyword">with</span> &#123; &#125;;<br></code></pre></td></tr></table></figure>
+<p>非位置属性必须有一个 init 或 set 访问器才能在 with 表达式中进行更改。</p>
+<p>编译器为实现功能，合成了克隆方法和复制的构造函数.虚拟克隆方法返回由复制构造函数初始化的新记录<br>可编写构造函数。如果记录是sealed则使构造函数是private的</p>
+<p>浅副本,复制的是引用</p>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>一条记录可以从另一条记录继承。 但是，记录不能从类继承，类也不能从记录继承。</p>
+<p>可派生位置参数:</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c#"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">record</span> <span class="hljs-title">Person</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> FirstName, <span class="hljs-built_in">string</span> LastName</span>)</span>;<br><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title">Teacher</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> FirstName, <span class="hljs-built_in">string</span> LastName, <span class="hljs-built_in">int</span> Grade</span>)</span><br><span class="hljs-function">    : <span class="hljs-title">Person</span>(<span class="hljs-params">FirstName, LastName</span>)</span>;<br></code></pre></td></tr></table></figure>
+<p>派生记录类型的合成 PrintMembers 方法调用基实现。派生类型和基类型的所有公共属性和字段都包含在 ToString 输出中<br>可提供自己的方法实现</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs c#"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">record</span> <span class="hljs-title">Person</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> FirstName, <span class="hljs-built_in">string</span> LastName, <span class="hljs-built_in">string</span>[] PhoneNumbers</span>)</span><br>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">virtual</span> <span class="hljs-built_in">bool</span> <span class="hljs-title">PrintMembers</span>(<span class="hljs-params">StringBuilder stringBuilder</span>)</span><br>    &#123;<br>        stringBuilder.Append(<span class="hljs-string">$&quot;FirstName = <span class="hljs-subst">&#123;FirstName&#125;</span>, LastName = <span class="hljs-subst">&#123;LastName&#125;</span>, &quot;</span>);<br>        stringBuilder.Append(<span class="hljs-string">$&quot;PhoneNumber1 = <span class="hljs-subst">&#123;PhoneNumbers[<span class="hljs-number">0</span>]&#125;</span>, PhoneNumber2 = <span class="hljs-subst">&#123;PhoneNumbers[<span class="hljs-number">1</span>]&#125;</span>&quot;</span>);<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>    &#125;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title">Teacher</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> FirstName, <span class="hljs-built_in">string</span> LastName, <span class="hljs-built_in">string</span>[] PhoneNumbers, <span class="hljs-built_in">int</span> Grade</span>)</span><br><span class="hljs-function">    : <span class="hljs-title">Person</span>(<span class="hljs-params">FirstName, LastName, PhoneNumbers</span>)</span><br>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-built_in">bool</span> <span class="hljs-title">PrintMembers</span>(<span class="hljs-params">StringBuilder stringBuilder</span>)</span><br>    &#123;<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">base</span>.PrintMembers(stringBuilder))<br>        &#123;<br>            stringBuilder.Append(<span class="hljs-string">&quot;, &quot;</span>);<br>        &#125;;<br>        stringBuilder.Append(<span class="hljs-string">$&quot;Grade = <span class="hljs-subst">&#123;Grade&#125;</span>&quot;</span>);<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>    &#125;<br>&#125;;<br><br><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>()</span><br>&#123;<br>    Person teacher = <span class="hljs-keyword">new</span> Teacher(<span class="hljs-string">&quot;Nancy&quot;</span>, <span class="hljs-string">&quot;Davolio&quot;</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">string</span>[<span class="hljs-number">2</span>] &#123; <span class="hljs-string">&quot;555-1234&quot;</span>, <span class="hljs-string">&quot;555-6789&quot;</span> &#125;, <span class="hljs-number">3</span>);<br>    Console.WriteLine(teacher);<br>    <span class="hljs-comment">// output: Teacher &#123; FirstName = Nancy, LastName = Davolio, PhoneNumber1 = 555-1234, PhoneNumber2 = 555-6789, Grade = 3 &#125;</span><br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="仅限-Init-的资源库"><a href="#仅限-Init-的资源库" class="headerlink" title="仅限 Init 的资源库"></a>仅限 Init 的资源库</h2><p>调用方可使用属性初始化表达式语法在创建表达式中设置这些值，但构造完成后，这些属性将变为只读。</p>
+<p>可为定义的任何 class、struct 或 record 声明仅限 init 的资源库。</p>
+<h2 id="顶级语句"><a href="#顶级语句" class="headerlink" title="顶级语句"></a>顶级语句</h2><p>认为是文件Program类的Main语法中的语句.</p>
+<h2 id="模式匹配增强功能"><a href="#模式匹配增强功能" class="headerlink" title="模式匹配增强功能"></a>模式匹配增强功能</h2><p>新增and or not<br>大小于和大小等于<br>括号强制&#x2F;强调优先级</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c#"><span class="hljs-keyword">if</span> (<span class="hljs-function">e <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-title">or</span> (<span class="hljs-params">&gt;= <span class="hljs-string">&#x27;a&#x27;</span></span>))</span>&#123;&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="性能和互操作性"><a href="#性能和互操作性" class="headerlink" title="性能和互操作性"></a>性能和互操作性</h2><p>nint是IntPtr<br>nuint是UIntPtr<br><code>delegate*</code>函数指针</p>
+<hr>
+<h1 id="10"><a href="#10" class="headerlink" title="10"></a>10</h1><ul>
+<li>可使用<code>record struct</code>或<code>readonly record struct</code>声明为值类型记录</li>
+<li>不使用new或者结构体实例，前提使用前初始化所有字段</li>
+<li>结构体有字段未初始化时，可在公共无参构造函数内初始化</li>
+<li>全局global using </li>
+<li>文件范围<code>namespace xxx</code></li>
+<li>扩展属性模式:<code>&#123; Prop1: &#123; Prop2: pattern &#125; &#125;</code></li>
+<li>特性用于lambda:<code>[return: Example(1)] (int s) =&gt; s++;</code></li>
+<li>显式lambda返回类型:<code>var choose = object (bool b) =&gt; b ? 1 : &quot;two&quot;; // Func&lt;bool, object&gt;</code></li>
+<li><code>Expression&lt;TDelegate&gt;</code>类,将强类型化的 Lambda 表达式表示为表达式树形式的数据结构</li>
+<li>常量字符串<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c#"><span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span> Language = <span class="hljs-string">&quot;C#&quot;</span>;<br><span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span> Platform = <span class="hljs-string">&quot;.NET&quot;</span>;<br><span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span> Version = <span class="hljs-string">&quot;10.0&quot;</span>;<br><span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span> FullProductName = <span class="hljs-string">$&quot;<span class="hljs-subst">&#123;Platform&#125;</span> - Language: <span class="hljs-subst">&#123;Language&#125;</span> Version: <span class="hljs-subst">&#123;Version&#125;</span>&quot;</span>;`<br></code></pre></td></tr></table></figure></li>
+<li>记录类型密封ToString()</li>
+<li>在同一析构中进行赋值和初始化<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs #">int x = 0;<br>(x, int y) = point;<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="AsyncTaskMethodBuilder特性"><a href="#AsyncTaskMethodBuilder特性" class="headerlink" title="AsyncTaskMethodBuilder特性"></a>AsyncTaskMethodBuilder特性</h2><p>添加到可为异步返回类型的类型。有GetAwaiter()，返回对象实现ICriticalNotifyCompletion接口<br>该特性指定会在异步方法返回指定类型时生成异步方法实现的类型</p>
+<ul>
+<li>Task获取生成器的任务</li>
+<li>静态Create()创建实例</li>
+<li>SetException()设置异常</li>
+<li>SetResult()标记文成</li>
+<li>Start()</li>
+<li>AwitOnCompleted()<br>c#10后可用于异步方法.</li>
+</ul>
+<h2 id="CallerArgumentExpression特性诊断"><a href="#CallerArgumentExpression特性诊断" class="headerlink" title="CallerArgumentExpression特性诊断"></a>CallerArgumentExpression特性诊断</h2><p>编译器会自动填充调用参数的表达式字符串</p>
+<p>其他调用信息:</p>
+<ul>
+<li>CallerMemberName：调用方名称，方法名或者属性名；</li>
+<li>CallerFilePath：调用方源代码的位置；</li>
+<li>CallerLineNumber：调用方位于源代码的第几行。<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs c#">Validate(<span class="hljs-literal">false</span>);<br><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Validate</span>(<span class="hljs-params"><span class="hljs-built_in">bool</span> condition, [CallerArgumentExpression(<span class="hljs-string">&quot;condition&quot;</span></span>)] <span class="hljs-built_in">string</span>? message</span> = <span class="hljs-literal">null</span>, [CallerLineNumber] <span class="hljs-built_in">int</span>? line = <span class="hljs-literal">null</span>, [CallerMemberName] <span class="hljs-built_in">string</span> name = <span class="hljs-literal">null</span>, [CallerFilePath] <span class="hljs-built_in">string</span> path = <span class="hljs-literal">null</span>)<br>&#123;<br>	<span class="hljs-keyword">if</span> (!condition)<br>	&#123;<br>		Console.WriteLine(condition);<span class="hljs-comment">//false</span><br>		Console.WriteLine(message);<span class="hljs-comment">//flase</span><br>		Console.WriteLine(path);<span class="hljs-comment">//C:\Users\hui\AppData\Local\Temp\LINQPad7\_ebwaadgv\qpgpvl\LINQPadQuery</span><br>		Console.WriteLine(name);<span class="hljs-comment">//Main</span><br>		Console.WriteLine(line.ToString());<span class="hljs-comment">//1</span><br>		<span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> InvalidOperationException(<span class="hljs-string">$&quot;Argument failed validation: &lt;<span class="hljs-subst">&#123;message&#125;</span>&gt;&quot;</span>);<span class="hljs-comment">//异常，信息为Argument failed validation: &lt;false&gt;</span><br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="category-chain-item">学习</a>
+  
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/c/" class="category-chain-item">c#</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>csharp新特性</div>
+      <div>http://tupi00.github.io/2022/11/07/skill/csharp/新特性/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>tupi</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年11月7日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/11/09/skill/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" title="学习路线">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">学习路线</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/11/07/skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="设计模式笔记">
+                        <span class="hidden-mobile">设计模式笔记</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
